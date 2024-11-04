@@ -1,0 +1,5 @@
+theme: minima  # 任意のJekyllテーマ
+markdown: kramdown  # Markdownエンジンの指定
+include:
+  - "*.cpp"  # .cppファイルを含める
+  - "*.md"   # .mdファイルを含める
