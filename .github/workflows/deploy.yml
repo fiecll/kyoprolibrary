@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # 更新を監視するブランチ（例: main）
 
 jobs:
   build-deploy:
@@ -18,10 +18,11 @@ jobs:
         with:
           ruby-version: 3.0  # 必要に応じて変更
 
+      - name: Install Bundler
+        run: gem install bundler -v 2.5.22
+
       - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
+        run: bundle _2.5.22_ install
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
@@ -31,10 +32,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-      
-      - name: Install Bundler
-  run: gem install bundler -v 2.5.22
-
-    - name: Install dependencies
-      run: bundle _2.5.22_ install
-
