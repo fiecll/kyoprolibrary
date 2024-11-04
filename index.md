@@ -8,16 +8,10 @@
 
 ---
 
----
-
 ## アルゴリズム一覧
 
 以下のリンクから各アルゴリズムの詳細ページに移動できます：
 
-<ul>
-  {% for algorithm in site.pages %}
-    {% if algorithm.path contains 'algorithms/' %}
-      <li><a href="{{ algorithm.url }}">{{ algorithm.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+* [整列アルゴリズム](/algorithms/sorting)
+* [グラフアルゴリズム](/algorithms/graph)
+* [動的計画法](/algorithms/dp)
