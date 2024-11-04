@@ -14,8 +14,10 @@
 
 以下のリンクから各アルゴリズムの詳細ページに移動できます：
 
-{% for algorithm in site.pages %}
-  {% if algorithm.path contains 'algorithms/' %}
-    - [{{ algorithm.title }}]({{ algorithm.url }})
-  {% endif %}
-{% endfor %}
+<ul>
+  {% for algorithm in site.pages %}
+    {% if algorithm.path contains 'algorithms/' %}
+      <li><a href="{{ algorithm.url }}">{{ algorithm.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
