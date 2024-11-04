@@ -8,8 +8,10 @@
 
 以下のリンクから各アルゴリズムの詳細ページに移動できます：
 
-- [アルゴリズム1](algorithms/algorithm1)
-- [アルゴリズム2](algorithms/algorithm2)
-- [アルゴリズム3](algorithms/algorithm3)
+{% for algorithm in site.pages %}
+  {% if algorithm.path contains 'algorithms/' %}
+    - [{{ algorithm.title }}]({{ algorithm.url }})
+  {% endif %}
+{% endfor %}
 
 ---
