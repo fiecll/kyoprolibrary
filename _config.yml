@@ -1,5 +1,7 @@
 theme: minima  # 任意のJekyllテーマ
 markdown: kramdown  # Markdownエンジンの指定
+baseurl: "/repository"  # ここが設定されている場合、URLに追加する必要があります。
+
 include:
   - "*.cpp"  # .cppファイルを含める
   - "*.md"   # .mdファイルを含める
