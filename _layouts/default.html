@@ -19,17 +19,7 @@
     {{ content }}
   </main>
 
-  <!-- フッター部分 -->
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-  <ul>
-    {% for algorithm in site.pages %}
-      {% if algorithm.path contains 'algorithms/' %}
-        <li><a href="{{ algorithm.url }}">{{ algorithm.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-  </footer>
+
 
 </body>
 </html>
