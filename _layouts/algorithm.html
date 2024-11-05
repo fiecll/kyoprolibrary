@@ -8,7 +8,5 @@ layout: default
 </div>
 
 <h2>コード</h2>
-<pre><code>{{ cpp_content | escape }}</code></pre>
 {% capture cpp_content %}{% include_relative code.cpp %}{% endcapture %}
-{{ cpp_content | escape }}
-</code></pre>
+<pre><code class="language-cpp">{{ cpp_content | strip | escape }}</code></pre>
