@@ -1,5 +1,7 @@
 ---
 layout: algorithm
-title: ダイクストラ法
+title: ダイクストラ
+permalink: /algorithms/ダイクストラ/
 ---
-アルゴリズム1の説明内容を書きます。
+
+ダイクストラ法の説明内容を書きます。
