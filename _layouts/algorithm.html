@@ -9,8 +9,6 @@ layout: default
 
 <h2>コード</h2>
 <pre><code>
-  {% capture cpp_content %}
-    {% include_relative code.cpp %}
-  {% endcapture %}
-  {{ cpp_content | escape }}
+{% capture cpp_content %}{% include_relative code.cpp %}{% endcapture %}
+{{ cpp_content | escape }}
 </code></pre>
