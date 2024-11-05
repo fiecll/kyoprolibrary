@@ -18,8 +18,9 @@ title: 競技プログラミングライブラリ
 <ul>
   {% for algorithm in site.pages %}
     {% if algorithm.path contains 'algorithms/' %}
-      <li><a href="{{ site.baseurl }}{{ algorithm.url }}">{{ algorithm.title }}</a></li>
+      <li><a href="{{ site.baseurl }}/algorithms/{{ algorithm.title | slugify }}/">{{ algorithm.title }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
+
 
