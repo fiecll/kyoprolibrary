@@ -1,5 +1,15 @@
-theme: minima  # 任意のJekyllテーマ
-markdown: kramdown  # Markdownエンジンの指定
+theme: minima
+markdown: kramdown
+baseurl: "/kyoprolibrary"  # あなたのリポジトリ名に変更
+url: "https://[GitHubユーザー名].github.io"
+
 include:
-  - "*.cpp"  # .cppファイルを含める
-  - "*.md"   # .mdファイルを含める
+  - "*.cpp"
+  - "*.md"
+
+defaults:
+  - scope:
+      path: "algorithms"
+      type: "pages"
+    values:
+      layout: "algorithm"
