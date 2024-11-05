@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ダイクストラ</title>
+  <link rel="stylesheet" href="/repository/assets/css/style.css">
+</head>
+<body>
+
+  <!-- ヘッダー部分 -->
+  <header>
+    <h1>kyoprolibrary</h1>
+    <!-- ナビゲーションなどを追加したい場合 -->
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <h2>説明</h2>
+<div>
+  <p>ダイクストラ法の説明内容を書きます。</p>
+
+</div>
+
+<h2>コード</h2>
+<pre><code>
+  
+  
+    #include &lt;bits/stdc++.h&gt;
+using namespace std;
+#define rep(i, n) for (int i = 0; i &lt; (int)(n); i++)
+#define all(v) v.begin(), v.end()
+using ll = long long;
+using P = pair&lt;ll, int&gt;; // Fix 1: Correct pair comparison
+struct Edge {
+  int to, cost;
+  Edge(int to, int cost) : to(to), cost(cost) {}
+};
+using Graph = vector&lt;vector&lt;Edge&gt;&gt;;
+const long long INF = 1LL &lt;&lt; 60;
+void dijkstra(const Graph &amp;G, int s, vector&lt;long long&gt; &amp;dis) {
+    int N = G.size();
+    dis.resize(N, INF);
+    priority_queue&lt;P, vector&lt;P&gt;, greater&lt;P&gt;&gt; pq;  // 「仮の最短距離, 頂点」が小さい順に並ぶ
+    dis[s] = 0;
+    pq.emplace(dis[s], s);
+    while (!pq.empty()) {
+        P p = pq.top();
+        pq.pop();
+        int v = p.second;
+        if (dis[v] &lt; p.first) {  // 最短距離で無ければ無視
+            continue;
+        }
+        for (auto &amp;e : G[v]) {
+            if (dis[e.to] &gt; dis[v] + e.cost) {  // 最短距離候補なら priority_queue に追加
+                dis[e.to] = dis[v] + e.cost;
+                pq.emplace(dis[e.to], e.to);
+            }
+        }
+    }
+}
+  
+</code></pre>
+
+  </main>
+
+
+
+</body>
+</html>
