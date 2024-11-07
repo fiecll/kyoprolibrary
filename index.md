@@ -10,9 +10,10 @@ title: 競技プログラミングライブラリ
 <ul>
   {% for algorithm in site.pages %}
     {% if algorithm.path contains 'algorithms/' %}
-      <li><a href="{{ site.baseurl }}{{ algorithm.url }}">{{ algorithm.title }}</a></li>
+      <li><a href="{{ algorithm.url | relative_url }}">{{ algorithm.title }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
+
 
 ``
