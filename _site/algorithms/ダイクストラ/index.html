@@ -4,18 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ダイクストラ</title>
-  <link rel="stylesheet" href="/kyoprolibrary/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-
-  <!-- ヘッダー部分 -->
-  <header>
-    <h1>kyoprolibrary</h1>
-    <!-- ナビゲーションなどを追加したい場合 -->
+  <header class="site-header">
+    <h1 class="site-title"><a href="/">競技プログラミングライブラリ</a></h1>
   </header>
-
-  <!-- メインコンテンツ -->
-  <main>
+  <main class="page-content">
     <h2>説明</h2>
 <div>
   <p>ダイクストラ法の説明内容を書きます。</p>
@@ -23,7 +18,8 @@
 </div>
 
 <h2>コード</h2>
-<pre><code>
+<div class="code-block">
+  <pre><code class="language-cpp">
 
 #include &lt;bits/stdc++.h&gt;
 using namespace std;
@@ -58,11 +54,14 @@ void dijkstra(const Graph &amp;G, int s, vector&lt;long long&gt; &amp;dis) {
         }
     }
 }
-</code></pre>
+  </code></pre>
+  <button onclick="copyCode(this)">Copy</button>
+</div>
 
   </main>
-
-
-
+  <footer class="site-footer">
+    © 2024 kyoprolibrary
+  </footer>
+  <script src="/assets/js/copy.js"></script>
 </body>
 </html>
