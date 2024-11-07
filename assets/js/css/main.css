@@ -1,0 +1,117 @@
+/** Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
+
+/** Basic styling */
+body {
+  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/** Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
+
+/** `main` element */
+main { display: block; }
+
+/** Images */
+img { max-width: 100%; vertical-align: middle; }
+
+/** Lists */
+ul, ol { margin-left: 30px; }
+
+/** Headings */
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+/** Links */
+a { color: #2a7ae2; text-decoration: none; }
+a:visited { color: #1756a9; }
+a:hover { color: #111; text-decoration: underline; }
+
+/** Blockquotes */
+blockquote {
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+
+/** Code block styling */
+/* コードブロックの枠とスタイル */
+pre {
+  position: relative;
+  background-color: #f5f5f5;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: "Courier New", Courier, monospace;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* コピーボタンのスタイル */
+.copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* インラインコードの装飾 */
+code {
+  background-color: #eef;  /* 薄い青の背景 */
+  padding: 2px 4px;        /* 内側の余白 */
+  border-radius: 4px;      /* 角を丸く */
+  font-family: "Courier New", Courier, monospace;
+}
+
+pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/** Syntax highlighting styles */
+.highlight { background: #1e1e1e; color: #dcdcdc; padding: 16px; border-radius: 8px; border: 1px solid #555; }
+.highlight .c, .highlight .cm, .highlight .c1 { color: #6a9955; font-style: italic; } /* Comments */
+.highlight .k, .highlight .kc, .highlight .kd { color: #569cd6; font-weight: bold; } /* Keywords */
+.highlight .s, .highlight .sb, .highlight .s2 { color: #ce9178; } /* Strings */
+.highlight .na, .highlight .nv, .highlight .nc { color: #4ec9b0; } /* Variables/Constants */
+.highlight .o, .highlight .ow { font-weight: bold; } /* Operators */
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo { color: #099; } /* Numbers */
+.highlight .nt { color: #000080; } /* Tags */
+.highlight .err { color: #a61717; background-color: #e3d2d2; } /* Errors */
+.highlight .gd { color: #000; background-color: #fdd; } /* Diff deleted */
+.highlight .gi { color: #000; background-color: #dfd; } /* Diff inserted */
+.highlight .bp { color: #999; } /* Built-in functions */
+.highlight .ss { color: #990073; } /* Special symbols */
+
+/** Wrapper */
+.wrapper { max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 800px) {
+  .wrapper { max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; }
+}
+
+/** Site header and footer */
+.site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; }
+.site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; }
+.site-footer { border-top: 1px solid #e8e8e8; padding: 30px 0; }
