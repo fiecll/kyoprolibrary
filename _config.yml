@@ -5,3 +5,5 @@ include:
   - algorithms
 kramdown:
   syntax_highlighter: rouge
+baseurl: "/kyoprolibrary"  # リポジトリ名を指定
+
