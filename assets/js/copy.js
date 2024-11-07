@@ -1,12 +1,12 @@
 function copyCode(button) {
-    const code = button.previousElementSibling.innerText;
-    navigator.clipboard.writeText(code).then(() => {
-      button.innerText = "Copied!";
+    const codeBlock = button.previousElementSibling.textContent;
+    navigator.clipboard.writeText(codeBlock).then(() => {
+      button.textContent = "Copied!";
       setTimeout(() => {
-        button.innerText = "Copy";
+        button.textContent = "Copy";
       }, 2000);
     }).catch(err => {
-      console.error("Failed to copy text: ", err);
+      console.error("Failed to copy: ", err);
     });
   }
   
