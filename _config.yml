@@ -1,9 +1,27 @@
-theme: minima
+title: "競技プログラミングライブラリ"
+description: "競技プログラミング用のアルゴリズムライブラリ"
+baseurl: "/kyoprolibrary"  # GitHubリポジトリ名と一致させる
+url: "https://username.github.io"  # GitHub PagesのURLに合わせる
+theme: minima  # 必要に応じてテーマを設定
 markdown: kramdown
-include:
-  - assets
-  - algorithms
 kramdown:
-  syntax_highlighter: rouge
-baseurl: "/kyoprolibrary"  # リポジトリ名を指定
+  syntax_highlighter: rouge  # コードのシンタックスハイライトを設定
+  input: GFM  # GitHub Flavored Markdownを使用
 
+include:
+  - "*.cpp"  # .cppファイルをビルドに含める
+  - "*.md"   # .mdファイルをビルドに含める
+
+# ソースコードのディレクトリ設定（通常はデフォルトのままで問題ありません）
+source: .
+
+# プラグイン設定（必要に応じて追加）
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# ページナビゲーション設定
+paginate: 5  # 1ページあたりのアイテム数
+
+# その他の設定
+permalink: pretty  # URLがわかりやすい形式になるよう設定
