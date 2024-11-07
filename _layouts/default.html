@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-
-  <!-- ヘッダー部分 -->
   <header>
-    <h1>{{ site.title }}</h1>
-    <!-- ナビゲーションなどを追加したい場合 -->
+    <!-- ヘッダーの内容 -->
   </header>
 
-  <!-- メインコンテンツ -->
   <main>
     {{ content }}
   </main>
 
+  <footer>
+    <!-- フッターの内容 -->
+  </footer>
 
-
+  <script src="/assets/js/copy.js"></script>
 </body>
 </html>
