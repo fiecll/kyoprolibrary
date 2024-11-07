@@ -4,17 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ダイクストラ</title>
-  <link rel="stylesheet" href="/kyoprolibrary/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-
-  <!-- ヘッダー部分 -->
   <header>
-    <h1>kyoprolibrary</h1>
-    <!-- ナビゲーションなどを追加したい場合 -->
+    <!-- ヘッダーの内容 -->
   </header>
 
-  <!-- メインコンテンツ -->
   <main>
     <h2>説明</h2>
 <div>
@@ -23,8 +19,9 @@
 </div>
 
 <h2>コード</h2>
-
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+<div class="code-block">
+  
+  <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 #define rep(i, n) for (int i = 0; i &lt; (int)(n); i++)
 #define all(v) v.begin(), v.end()
@@ -57,9 +54,15 @@ void dijkstra(const Graph &amp;G, int s, vector&lt;long long&gt; &amp;dis) {
         }
     }
 }</code></pre>
+  <button class="copy-button" onclick="copyCode(this)">Copy</button>
+</div>
+
   </main>
 
+  <footer>
+    <!-- フッターの内容 -->
+  </footer>
 
-
+  <script src="/assets/js/copy.js"></script>
 </body>
 </html>
