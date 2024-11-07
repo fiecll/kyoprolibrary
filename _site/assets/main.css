@@ -45,22 +45,23 @@ blockquote {
 }
 
 /** Code block styling */
+/* コードブロックの装飾 */
 pre {
-  background-color: #f5f5f5;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 16px;
-  overflow-x: auto;
-  font-family: "Courier New", Courier, monospace;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5; /* 背景色 */
+  border: 1px solid #ccc;    /* 枠線 */
+  border-radius: 8px;        /* 角を丸く */
+  padding: 16px;             /* 内側の余白 */
+  overflow-x: auto;          /* 横スクロールを許可 */
+  font-family: "Courier New", Courier, monospace; /* 等幅フォント */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
 }
 
+/* インラインコードの装飾 */
 code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef;
-  padding: 1px 5px;
+  background-color: #eef;  /* 薄い青の背景 */
+  padding: 2px 4px;        /* 内側の余白 */
+  border-radius: 4px;      /* 角を丸く */
+  font-family: "Courier New", Courier, monospace;
 }
 
 pre > code {
