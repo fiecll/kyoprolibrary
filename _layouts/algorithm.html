@@ -9,7 +9,6 @@ layout: default
 
 <h2>コード</h2>
 <div class="code-block">
-  {% capture cpp_content %}{% include_relative code.cpp %}{% endcapture %}
   <pre><code class="language-cpp">{{ cpp_content | strip | escape }}</code></pre>
-  <button class="copy-button" onclick="copyCode(this)">Copy</button>
+  <button onclick="copyCode(this)">Copy</button>
 </div>

@@ -1,10 +1,7 @@
-theme: minima  # 任意のJekyllテーマ
-markdown: kramdown  # Markdownエンジンの指定
-baseurl: "/kyoprolibrary"  # ここが設定されている場合、URLに追加する必要があります。
-
+theme: minima
+markdown: kramdown
 include:
-  - "*.cpp"  # .cppファイルを含める
-  - "*.md"   # .mdファイルを含める
   - assets
+  - algorithms
 kramdown:
   syntax_highlighter: rouge

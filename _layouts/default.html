@@ -3,22 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <title>{{ page.title | default: "競技プログラミングライブラリ" }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
+    <h1 class="site-title"><a href="{{ '/' | relative_url }}">競技プログラミングライブラリ</a></h1>
   </header>
-
-  <main>
+  <main class="page-content">
     {{ content }}
   </main>
-
-  <footer>
+  <footer class="site-footer">
+    © 2024 kyoprolibrary
   </footer>
-
   <script src="/assets/js/copy.js"></script>
-
-
 </body>
 </html>
