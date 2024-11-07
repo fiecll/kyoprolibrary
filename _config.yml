@@ -5,5 +5,6 @@ baseurl: "/kyoprolibrary"  # ここが設定されている場合、URLに追加
 include:
   - "*.cpp"  # .cppファイルを含める
   - "*.md"   # .mdファイルを含める
+  - assets
 kramdown:
   syntax_highlighter: rouge
