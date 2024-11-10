@@ -16,4 +16,4 @@ title: 競技プログラミングライブラリ
 </ul>
 
 
-<img url = 'IMG_1570.JPG'> <img>
+<img src="IMG_1570.JPG" alt="代替テキスト"
