@@ -16,4 +16,5 @@ title: 競技プログラミングライブラリ
 </ul>
 
 
-<img src="IMG_1570.JPG" alt="代替テキスト"
+<img src="{{ site.baseurl }}/assets/images/IMG_1570.JPG" alt="代替テキスト" />
+
