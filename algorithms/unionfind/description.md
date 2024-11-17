@@ -13,11 +13,18 @@ permalink: /algorithms/unionfind/
 ## 実装一覧
 
 <ul>
-  {% assign cpp_files = site.static_files | where: "path", "/algorithms/unionfind/" %}
+  {% assign cpp_files = site.static_files | where_exp: "file", "file.path contains '/algorithms/unionfind/'" %}
   {% for file in cpp_files %}
     {% if file.extname == ".cpp" %}
-      <li><a href="{{ file.path }}" download>{{ file.name }}</a></li>
+      <li><a href="{{ file.path }}" download>{{ file.basename }}</a></li>
     {% endif %}
+  {% endfor %}
+</ul>
+
+
+<ul>
+  {% for file in site.static_files %}
+    <li>{{ file.path }}</li>
   {% endfor %}
 </ul>
 
