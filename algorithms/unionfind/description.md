@@ -1,12 +1,12 @@
 ---
-layout: unionfind
+layout: default
 title: Union-Find Algorithms
 permalink: /algorithms/unionfind/
 ---
 
 # Union-Find Algorithms
 
-このページでは、Union-Findに関連するアルゴリズムとそのC++実装を紹介します。
+このページでは、Union-Findに関連するアルゴリズムの説明ページにアクセスできます。
 
 ---
 
