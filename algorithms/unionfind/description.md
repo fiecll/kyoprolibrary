@@ -6,25 +6,14 @@ permalink: /algorithms/unionfind/
 
 # Union-Find Algorithms
 
-このページでは、Union-Findに関連するC++実装を紹介します。
+このページでは、Union-Findに関連するアルゴリズムとそのC++実装を紹介します。
 
 ---
 
 ## 実装一覧
 
-<ul>
-  {% assign cpp_files = site.static_files | where_exp: "file", "file.path contains '/algorithms/unionfind/'" %}
-  {% for file in cpp_files %}
-    {% if file.extname == ".cpp" %}
-      <li><a href="{{ file.path }}" download>{{ file.basename }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+- [基本的なUnion-Find](/algorithms/unionfind/unionfind/)
+- [モノイド付きUnion-Find](/algorithms/unionfind/monoid_unionfind/)
+- [ポテンシャル付きUnion-Find](/algorithms/unionfind/potential_unionfind/)
 
-
-<ul>
-  {% for file in site.static_files %}
-    <li>{{ file.path }}</li>
-  {% endfor %}
-</ul>
-
+---
