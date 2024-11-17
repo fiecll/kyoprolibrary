@@ -10,3 +10,6 @@ permalink: /algorithms/unionfind/unionfind/
 2. **Union（集合の併合）**: 2つの集合を1つにまとめる。
 
 以下はそのC++コードの実装例です。
+
+```cpp
+{% include_relative code.cpp %}

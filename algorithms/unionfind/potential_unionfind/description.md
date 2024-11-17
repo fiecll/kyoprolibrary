@@ -11,3 +11,6 @@ permalink: /algorithms/unionfind/potential_unionfind/
 - 制約付き等式の判定。
 
 以下はそのC++コードの実装例です。
+
+```cpp
+{% include_relative code.cpp %}

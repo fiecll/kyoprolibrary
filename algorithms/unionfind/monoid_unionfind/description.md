@@ -10,3 +10,6 @@ permalink: /algorithms/unionfind/monoid_unionfind/
 - 各連結成分の「合計値」「最大値」「最小値」などの累積値を計算。
 
 以下はそのC++コードの実装例です。
+
+```cpp
+{% include_relative code.cpp %}
