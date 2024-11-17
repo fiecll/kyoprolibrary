@@ -12,8 +12,8 @@ permalink: /algorithms/unionfind/
 
 ## 実装一覧
 
-- [基本的なUnion-Find](/algorithms/unionfind/unionfind/)
-- [モノイド付きUnion-Find](/algorithms/unionfind/monoid_unionfind/)
-- [ポテンシャル付きUnion-Find](/algorithms/unionfind/potential_unionfind/)
+- [基本的なUnion-Find](/kyoprolibrary/algorithms/unionfind/unionfind/)
+- [モノイド付きUnion-Find](/kyoprolibrary/algorithms/unionfind/monoid_unionfind/)
+- [ポテンシャル付きUnion-Find](/kyoprolibrary/algorithms/unionfind/potential_unionfind/)
 
 ---
