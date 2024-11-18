@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Union-Find Algorithms
 permalink: /algorithms/unionfind/
 ---

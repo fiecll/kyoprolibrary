@@ -1,5 +1,4 @@
 ---
-layout: algorithm
 title: モノイド付きUnion-Find
 documentation_of: /algorithms/unionfind/monoid_unionfind/monoid_unionfind.hpp
 ---

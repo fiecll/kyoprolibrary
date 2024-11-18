@@ -1,5 +1,4 @@
 ---
-layout: algorithm
 title: 二次元累積和
 permalink: /algorithms/二次元累積和/
 ---

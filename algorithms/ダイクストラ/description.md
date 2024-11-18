@@ -1,5 +1,4 @@
 ---
-layout: algorithm
 title: ダイクストラ
 permalink: /algorithms/ダイクストラ/
 ---

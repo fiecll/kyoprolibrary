@@ -1,5 +1,4 @@
 ---
-layout: algorithm
 title: Union-Find
 documentation_of:  /algorithms/unionfind/unionfind/unionfind.hpp
 ---

@@ -1,5 +1,4 @@
 ---
-layout: algorithm
 title: ポテンシャル付きUnion-Find
 documentation_of:  /algorithms/unionfind/potential_unionfind/potential_unionfind.hpp
 ---
