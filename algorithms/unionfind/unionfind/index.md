@@ -1,6 +1,6 @@
 ---
 title: Union-Find
-documentation_of:  ./unionfind.hpp
+documentation_of:  ../unionfind.hpp
 ---
 
 基本的なUnion-Findは、以下の2つの操作を効率的に行うデータ構造です。
