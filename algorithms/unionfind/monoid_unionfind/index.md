@@ -1,6 +1,6 @@
 ---
 title: モノイド付きUnion-Find
-documentation_of: /algorithms/unionfind/monoid_unionfind/monoid_unionfind.hpp
+documentation_of: ./monoid_unionfind.hpp
 ---
 
 モノイド付きUnion-Findは、各連結成分に累積値を持たせることができる拡張です。
