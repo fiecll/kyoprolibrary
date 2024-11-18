@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>モノイド付きUnion-Find | 競技プログラミングライブラリ</title>
+<title>ポテンシャル付きUnion-Find | 競技プログラミングライブラリ</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="モノイド付きUnion-Find" />
+<meta property="og:title" content="ポテンシャル付きUnion-Find" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="競技プログラミング用のアルゴリズムライブラリ" />
 <meta property="og:description" content="競技プログラミング用のアルゴリズムライブラリ" />
-<link rel="canonical" href="https://username.github.io/kyoprolibrary/algorithms/unionfind/monoid_unionfind/" />
-<meta property="og:url" content="https://username.github.io/kyoprolibrary/algorithms/unionfind/monoid_unionfind/" />
+<link rel="canonical" href="https://username.github.io/kyoprolibrary/algorithms/unionfind/potential_unionfind/potential_unionfind/" />
+<meta property="og:url" content="https://username.github.io/kyoprolibrary/algorithms/unionfind/potential_unionfind/potential_unionfind/" />
 <meta property="og:site_name" content="競技プログラミングライブラリ" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="モノイド付きUnion-Find" />
+<meta property="twitter:title" content="ポテンシャル付きUnion-Find" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"競技プログラミング用のアルゴリズムライブラリ","headline":"モノイド付きUnion-Find","url":"https://username.github.io/kyoprolibrary/algorithms/unionfind/monoid_unionfind/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"競技プログラミング用のアルゴリズムライブラリ","headline":"ポテンシャル付きUnion-Find","url":"https://username.github.io/kyoprolibrary/algorithms/unionfind/potential_unionfind/potential_unionfind/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/kyoprolibrary/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://username.github.io/kyoprolibrary/feed.xml" title="競技プログラミングライブラリ" /></head>
 <body><header class="site-header" role="banner">
@@ -31,7 +31,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/kyoprolibrary/algorithms/%E3%83%80%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9/">ダイクストラ</a><a class="page-link" href="/kyoprolibrary/algorithms/%E4%BA%8C%E6%AC%A1%E5%85%83%E7%B4%AF%E7%A9%8D%E5%92%8C/">二次元累積和</a><a class="page-link" href="/kyoprolibrary/algorithms/unionfind/unionfind/">Union-Find</a><a class="page-link" href="/kyoprolibrary/algorithms/unionfind/monoid_unionfind/">モノイド付きUnion-Find</a><a class="page-link" href="/kyoprolibrary/algorithms/unionfind/potential_unionfind/">ポテンシャル付きUnion-Find</a><a class="page-link" href="/kyoprolibrary/algorithms/unionfind/">Union-Find Algorithms</a></div>
+        <div class="trigger"><a class="page-link" href="/kyoprolibrary/algorithms/%E3%83%80%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9/">ダイクストラ</a><a class="page-link" href="/kyoprolibrary/algorithms/%E4%BA%8C%E6%AC%A1%E5%85%83%E7%B4%AF%E7%A9%8D%E5%92%8C/">二次元累積和</a><a class="page-link" href="/kyoprolibrary/algorithms/unionfind/">Union-Find Algorithms</a><a class="page-link" href="/kyoprolibrary/algorithms/unionfind/monoid_unionfind/monoid_unionfind/">モノイド付きUnion-Find</a><a class="page-link" href="/kyoprolibrary/algorithms/unionfind/potential_unionfind/potential_unionfind/">ポテンシャル付きUnion-Find</a><a class="page-link" href="/kyoprolibrary/algorithms/unionfind/unionfind/unionfind/">Union-Find</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -39,15 +39,16 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">モノイド付きUnion-Find</h1>
+    <h1 class="post-title">ポテンシャル付きUnion-Find</h1>
   </header>
 
   <div class="post-content">
-    <p>モノイド付きUnion-Findは、各連結成分に累積値を持たせることができる拡張です。</p>
+    <p>ポテンシャル付きUnion-Findは、各要素間の「差分」や「ポテンシャル」を管理する拡張版です。</p>
 
 <p>例えば、以下のような用途に使えます：</p>
 <ul>
-  <li>各連結成分の「合計値」「最大値」「最小値」などの累積値を計算。</li>
+  <li>グラフ上の重み付き辺の管理。</li>
+  <li>制約付き等式の判定。</li>
 </ul>
 
 <p>以下はそのC++コードの実装例です。</p>
