@@ -79,8 +79,14 @@ data:
   verifiedWith: []
 documentation_of: src/unionfind/potential_unionfind.hpp
 layout: document
-redirect_from:
-- /library/src/unionfind/potential_unionfind.hpp
-- /library/src/unionfind/potential_unionfind.hpp.html
-title: src/unionfind/potential_unionfind.hpp
+title: "\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304DUnion-Find"
 ---
+
+ポテンシャル付きUnion-Findは、各要素間の「差分」や「ポテンシャル」を管理する拡張版です。
+
+例えば、以下のような用途に使えます：
+- グラフ上の重み付き辺の管理。
+- 制約付き等式の判定。
+
+以下はそのC++コードの実装例です。
+

@@ -16,10 +16,10 @@ data:
       title: "\u30E2\u30CE\u30A4\u30C9\u4ED8\u304DUnion-Find"
     - icon: ':warning:'
       path: src/unionfind/potential_unionfind.hpp
-      title: src/unionfind/potential_unionfind.hpp
+      title: "\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304DUnion-Find"
     - icon: ':warning:'
       path: src/unionfind/unionfind.hpp
-      title: src/unionfind/unionfind.hpp
+      title: Union-Find
   verificationCategories:
   - name: .
     pages:
