@@ -1,6 +1,6 @@
 ---
 title: ポテンシャル付きUnion-Find
-documentation_of:   ../../../src/potential_unionfind.hpp
+documentation_of:   //src/potential_unionfind.hpp
 ---
 
 ポテンシャル付きUnion-Findは、各要素間の「差分」や「ポテンシャル」を管理する拡張版です。

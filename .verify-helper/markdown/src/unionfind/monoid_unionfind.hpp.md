@@ -102,8 +102,13 @@ data:
   verifiedWith: []
 documentation_of: src/unionfind/monoid_unionfind.hpp
 layout: document
-redirect_from:
-- /library/src/unionfind/monoid_unionfind.hpp
-- /library/src/unionfind/monoid_unionfind.hpp.html
-title: src/unionfind/monoid_unionfind.hpp
+title: "\u30E2\u30CE\u30A4\u30C9\u4ED8\u304DUnion-Find"
 ---
+
+モノイド付きUnion-Findは、各連結成分に累積値を持たせることができる拡張です。
+
+例えば、以下のような用途に使えます：
+- 各連結成分の「合計値」「最大値」「最小値」などの累積値を計算。
+
+以下はそのC++コードの実装例です。
+

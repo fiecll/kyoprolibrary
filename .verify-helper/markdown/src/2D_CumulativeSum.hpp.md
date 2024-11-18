@@ -53,8 +53,7 @@ data:
   verifiedWith: []
 documentation_of: src/2D_CumulativeSum.hpp
 layout: document
-redirect_from:
-- /library/src/2D_CumulativeSum.hpp
-- /library/src/2D_CumulativeSum.hpp.html
-title: src/2D_CumulativeSum.hpp
+title: "\u4E8C\u6B21\u5143\u7D2F\u7A4D\u548C"
 ---
+
+二次元累積和説明内容を書きます。
