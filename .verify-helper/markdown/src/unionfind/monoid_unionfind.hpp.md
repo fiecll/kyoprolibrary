@@ -97,7 +97,7 @@ data:
   isVerificationFile: false
   path: src/unionfind/monoid_unionfind.hpp
   requiredBy: []
-  timestamp: '2024-11-17 21:48:31+09:00'
+  timestamp: '2024-11-19 06:07:23+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: src/unionfind/monoid_unionfind.hpp

@@ -1,5 +1,5 @@
 current directory: /home/fie/projects/kyoprolibrary/.verify-helper/markdown/.vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20241118-123076-3rrpyl.rb extconf.rb
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20241119-168714-7bylct.rb extconf.rb
 creating Makefile
 
 current directory: /home/fie/projects/kyoprolibrary/.verify-helper/markdown/.vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
@@ -13,4 +13,4 @@ linking shared-object ruby_http_parser.so
 
 current directory: /home/fie/projects/kyoprolibrary/.verify-helper/markdown/.vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20241118-123076-upqh4q
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20241119-168714-w9zqma
