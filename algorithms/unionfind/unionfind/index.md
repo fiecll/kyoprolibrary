@@ -1,7 +1,7 @@
 ---
 layout: algorithm
 title: Union-Find
-permalink: /algorithms/unionfind/unionfind/
+documentation_of:  /algorithms/unionfind/unionfind/unionfind.hpp
 ---
 
 基本的なUnion-Findは、以下の2つの操作を効率的に行うデータ構造です。

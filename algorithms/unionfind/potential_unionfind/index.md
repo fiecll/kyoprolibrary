@@ -1,7 +1,7 @@
 ---
 layout: algorithm
 title: ポテンシャル付きUnion-Find
-permalink: /algorithms/unionfind/potential_unionfind/
+documentation_of:  /algorithms/unionfind/potential_unionfind/potential_unionfind.hpp
 ---
 
 ポテンシャル付きUnion-Findは、各要素間の「差分」や「ポテンシャル」を管理する拡張版です。
